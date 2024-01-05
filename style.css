@@ -115,6 +115,7 @@ nav {
 main {
     padding-block: 20px;
     margin-top: 80px;
+    padding-bottom: 75px;
 }
 
 .card-container {
@@ -165,6 +166,16 @@ main {
     color: black;
     cursor: pointer;
 
+}
+
+footer {
+    text-align: center;
+    background-color: #f3faff;
+    padding: 14px 0px;
+    position: fixed;
+    bottom: 0;
+    /* display: block; */
+    width: 100%;
 }
 
 /* Responsive styles for the navigation bar */
