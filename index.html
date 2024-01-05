@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()">
+                <img src="./assets/logo-no-background.png" alt="logo" class="logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')">Sports</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" name="" id="search-text" class="news-input" placeholder="e.g. Science"
+                    autocomplete="off">
+                <button class="search-btn" id="search-btn">Search</button>
+            </div>
+        </div>
+
+        <div class="menu-btn" onclick="toggleMenu()">☰ Menu</div>
+
+    </nav>
+    <main>
+        <div class="card-container container flex" id="card-container">
+
+
+        </div>
+
+        <span class="arrow" id="arrow">&#8679;</span>
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-img" id="news-img">
+            </div>
+            <div class="card-body">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">Gadget</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                    cumque earum
+                    reiciendis harum! Voluptas numquam nostrum ullam reiciendis ea harum?</p>
+            </div>
+        </div>
+    </template>
+    <script src="script.js"></script>
+</body>
+
+</html>
